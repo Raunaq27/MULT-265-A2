@@ -81,7 +81,7 @@ function HomeScreen({navigation}) {
       </ScrollView>
       <View style={styles.navStyle}>
         <View style={styles.btnStyle}>
-          <Button
+        <Button
             color={'green'}
             title="Home"
             onPress={() => navigation.navigate('Home')}
@@ -93,17 +93,17 @@ function HomeScreen({navigation}) {
           />
           <Button
             color={'black'}
-            title="Orders"
-            onPress={() => navigation.navigate('Orders')}
+            title="Browse"
+            onPress={() => navigation.navigate('Browse')}
           />
           <Button
             color={'black'}
-            title="Orders"
+            title="Pickup"
             onPress={() => navigation.navigate('Details')}
           />
           <Button
             color={'black'}
-            title="Orders"
+            title="Premium"
             onPress={() => navigation.navigate('Details')}
           />
         </View>
@@ -114,6 +114,101 @@ function HomeScreen({navigation}) {
 
 // second screen of the app
 function DetailsScreen({navigation}) {
+  return (
+    <View style={styles.container}>
+      <ScrollView>
+        <View style={styles.orderBox}>
+          <Text style={styles.heading}> Order 1342 </Text>
+          <Text style={styles.textStyle}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+            vehicula viverra augue, eget posuere odio tempus eu. Nullam eu
+            sollicitudin felis. Aliquam id massa et tellus molestie dapibus et
+          </Text>
+        </View>
+        <View style={styles.orderBox}>
+          <Text style={styles.heading}> Order 1342 </Text>
+          <Text style={styles.textStyle}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+            vehicula viverra augue, eget posuere odio tempus eu. Nullam eu
+            sollicitudin felis. Aliquam id massa et tellus molestie dapibus et
+          </Text>
+        </View>
+        <View style={styles.orderBox}>
+          <Text style={styles.heading}> Order 1342 </Text>
+          <Text style={styles.textStyle}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+            vehicula viverra augue, eget posuere odio tempus eu. Nullam eu
+            sollicitudin felis. Aliquam id massa et tellus molestie dapibus et
+          </Text>
+        </View>
+        <View style={styles.orderBox}>
+          <Text style={styles.heading}> Order 1342 </Text>
+          <Text style={styles.textStyle}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+            vehicula viverra augue, eget posuere odio tempus eu. Nullam eu
+            sollicitudin felis. Aliquam id massa et tellus molestie dapibus et
+          </Text>
+        </View>
+        <View style={styles.orderBox}>
+          <Text style={styles.heading}> Order 1342 </Text>
+          <Text style={styles.textStyle}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+            vehicula viverra augue, eget posuere odio tempus eu. Nullam eu
+            sollicitudin felis. Aliquam id massa et tellus molestie dapibus et
+          </Text>
+        </View>
+        <View style={styles.orderBox}>
+          <Text style={styles.heading}> Order 1342 </Text>
+          <Text style={styles.textStyle}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+            vehicula viverra augue, eget posuere odio tempus eu. Nullam eu
+            sollicitudin felis. Aliquam id massa et tellus molestie dapibus et
+          </Text>
+        </View>
+        <View style={styles.orderBox}>
+          <Text style={styles.heading}> Order 1342 </Text>
+          <Text style={styles.textStyle}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+            vehicula viverra augue, eget posuere odio tempus eu. Nullam eu
+            sollicitudin felis. Aliquam id massa et tellus molestie dapibus et
+          </Text>
+        </View>
+      </ScrollView>
+      <View style={styles.navStyle}>
+        <View style={styles.btnStyle}>
+        <Button
+            color={'green'}
+            title="Home"
+            onPress={() => navigation.navigate('Home')}
+          />
+          <Button
+            title="Orders"
+            color={'black'}
+            onPress={() => navigation.navigate('Orders')}
+          />
+          <Button
+            color={'black'}
+            title="Browse"
+            onPress={() => navigation.navigate('Browse')}
+          />
+          <Button
+            color={'black'}
+            title="Pickup"
+            onPress={() => navigation.navigate('Details')}
+          />
+          <Button
+            color={'black'}
+            title="Premium"
+            onPress={() => navigation.navigate('Details')}
+          />
+        </View>
+      </View>
+    </View>
+  );
+}
+
+// second screen of the app
+function BrowseScreen({navigation}) {
   return (
     <View style={styles.container}>
       <ScrollView>
@@ -188,17 +283,17 @@ function DetailsScreen({navigation}) {
           />
           <Button
             color={'black'}
-            title="Orders"
-            onPress={() => navigation.navigate('Orders')}
+            title="Browse"
+            onPress={() => navigation.navigate('Browse')}
           />
           <Button
             color={'black'}
-            title="Orders"
+            title="Pickup"
             onPress={() => navigation.navigate('Details')}
           />
           <Button
             color={'black'}
-            title="Orders"
+            title="Premium"
             onPress={() => navigation.navigate('Details')}
           />
         </View>
@@ -215,6 +310,7 @@ function App() {
       <Stack.Navigator initialRouteName="Home">
         <Stack.Screen name="Home" component={HomeScreen} />
         <Stack.Screen name="Orders" component={DetailsScreen} />
+        <Stack.Screen name="Browse" component={BrowseScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
