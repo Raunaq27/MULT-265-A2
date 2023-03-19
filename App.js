@@ -81,7 +81,7 @@ function HomeScreen({navigation}) {
       </ScrollView>
       <View style={styles.navStyle}>
         <View style={styles.btnStyle}>
-        <Button
+          <Button
             color={'green'}
             title="Home"
             onPress={() => navigation.navigate('Home')}
@@ -176,7 +176,7 @@ function DetailsScreen({navigation}) {
       </ScrollView>
       <View style={styles.navStyle}>
         <View style={styles.btnStyle}>
-        <Button
+          <Button
             color={'green'}
             title="Home"
             onPress={() => navigation.navigate('Home')}
@@ -212,61 +212,113 @@ function BrowseScreen({navigation}) {
   return (
     <View style={styles.container}>
       <ScrollView>
-        <View style={styles.orderBox}>
-          <Text style={styles.heading}> Order 1342 </Text>
-          <Text style={styles.textStyle}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-            vehicula viverra augue, eget posuere odio tempus eu. Nullam eu
-            sollicitudin felis. Aliquam id massa et tellus molestie dapibus et
-          </Text>
+        <View style={styles.container1}>
+          <Image
+            style={styles.imageStyle}
+            source={require('/Users/raunaqsingh/Desktop/html/assignments/265/MULT-265-A2-Raunaq/navigationApp/assets/pexels-ash-376464.jpg')}
+          />
+          <Image
+            style={styles.imageStyle}
+            source={require('/Users/raunaqsingh/Desktop/html/assignments/265/MULT-265-A2-Raunaq/navigationApp/assets/pexels-ella-olsson-1640774.jpg')}
+          />
+          <Image
+            style={styles.imageStyle}
+            source={require('/Users/raunaqsingh/Desktop/html/assignments/265/MULT-265-A2-Raunaq/navigationApp/assets/pexels-jane-doan-1099680.jpg')}
+          />
+          <Image
+            style={styles.imageStyle}
+            source={require('/Users/raunaqsingh/Desktop/html/assignments/265/MULT-265-A2-Raunaq/navigationApp/assets/pexels-ash-376464.jpg')}
+          />
         </View>
-        <View style={styles.orderBox}>
-          <Text style={styles.heading}> Order 1342 </Text>
-          <Text style={styles.textStyle}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-            vehicula viverra augue, eget posuere odio tempus eu. Nullam eu
-            sollicitudin felis. Aliquam id massa et tellus molestie dapibus et
-          </Text>
+        <View style={styles.container1}>
+          <Image
+            style={styles.imageStyle}
+            source={require('/Users/raunaqsingh/Desktop/html/assignments/265/MULT-265-A2-Raunaq/navigationApp/assets/pexels-ash-376464.jpg')}
+          />
+          <Image
+            style={styles.imageStyle}
+            source={require('/Users/raunaqsingh/Desktop/html/assignments/265/MULT-265-A2-Raunaq/navigationApp/assets/pexels-ella-olsson-1640774.jpg')}
+          />
+          <Image
+            style={styles.imageStyle}
+            source={require('/Users/raunaqsingh/Desktop/html/assignments/265/MULT-265-A2-Raunaq/navigationApp/assets/pexels-jane-doan-1099680.jpg')}
+          />
+          <Image
+            style={styles.imageStyle}
+            source={require('/Users/raunaqsingh/Desktop/html/assignments/265/MULT-265-A2-Raunaq/navigationApp/assets/pexels-ash-376464.jpg')}
+          />
         </View>
-        <View style={styles.orderBox}>
-          <Text style={styles.heading}> Order 1342 </Text>
-          <Text style={styles.textStyle}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-            vehicula viverra augue, eget posuere odio tempus eu. Nullam eu
-            sollicitudin felis. Aliquam id massa et tellus molestie dapibus et
-          </Text>
+        <View style={styles.container1}>
+          <Image
+            style={styles.imageStyle}
+            source={require('/Users/raunaqsingh/Desktop/html/assignments/265/MULT-265-A2-Raunaq/navigationApp/assets/pexels-ash-376464.jpg')}
+          />
+          <Image
+            style={styles.imageStyle}
+            source={require('/Users/raunaqsingh/Desktop/html/assignments/265/MULT-265-A2-Raunaq/navigationApp/assets/pexels-ella-olsson-1640774.jpg')}
+          />
+          <Image
+            style={styles.imageStyle}
+            source={require('/Users/raunaqsingh/Desktop/html/assignments/265/MULT-265-A2-Raunaq/navigationApp/assets/pexels-jane-doan-1099680.jpg')}
+          />
+          <Image
+            style={styles.imageStyle}
+            source={require('/Users/raunaqsingh/Desktop/html/assignments/265/MULT-265-A2-Raunaq/navigationApp/assets/pexels-ash-376464.jpg')}
+          />
         </View>
-        <View style={styles.orderBox}>
-          <Text style={styles.heading}> Order 1342 </Text>
-          <Text style={styles.textStyle}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-            vehicula viverra augue, eget posuere odio tempus eu. Nullam eu
-            sollicitudin felis. Aliquam id massa et tellus molestie dapibus et
-          </Text>
+        <View style={styles.container1}>
+          <Image
+            style={styles.imageStyle}
+            source={require('/Users/raunaqsingh/Desktop/html/assignments/265/MULT-265-A2-Raunaq/navigationApp/assets/pexels-ash-376464.jpg')}
+          />
+          <Image
+            style={styles.imageStyle}
+            source={require('/Users/raunaqsingh/Desktop/html/assignments/265/MULT-265-A2-Raunaq/navigationApp/assets/pexels-ella-olsson-1640774.jpg')}
+          />
+          <Image
+            style={styles.imageStyle}
+            source={require('/Users/raunaqsingh/Desktop/html/assignments/265/MULT-265-A2-Raunaq/navigationApp/assets/pexels-jane-doan-1099680.jpg')}
+          />
+          <Image
+            style={styles.imageStyle}
+            source={require('/Users/raunaqsingh/Desktop/html/assignments/265/MULT-265-A2-Raunaq/navigationApp/assets/pexels-ash-376464.jpg')}
+          />
         </View>
-        <View style={styles.orderBox}>
-          <Text style={styles.heading}> Order 1342 </Text>
-          <Text style={styles.textStyle}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-            vehicula viverra augue, eget posuere odio tempus eu. Nullam eu
-            sollicitudin felis. Aliquam id massa et tellus molestie dapibus et
-          </Text>
+        <View style={styles.container1}>
+          <Image
+            style={styles.imageStyle}
+            source={require('/Users/raunaqsingh/Desktop/html/assignments/265/MULT-265-A2-Raunaq/navigationApp/assets/pexels-ash-376464.jpg')}
+          />
+          <Image
+            style={styles.imageStyle}
+            source={require('/Users/raunaqsingh/Desktop/html/assignments/265/MULT-265-A2-Raunaq/navigationApp/assets/pexels-ella-olsson-1640774.jpg')}
+          />
+          <Image
+            style={styles.imageStyle}
+            source={require('/Users/raunaqsingh/Desktop/html/assignments/265/MULT-265-A2-Raunaq/navigationApp/assets/pexels-jane-doan-1099680.jpg')}
+          />
+          <Image
+            style={styles.imageStyle}
+            source={require('/Users/raunaqsingh/Desktop/html/assignments/265/MULT-265-A2-Raunaq/navigationApp/assets/pexels-ash-376464.jpg')}
+          />
         </View>
-        <View style={styles.orderBox}>
-          <Text style={styles.heading}> Order 1342 </Text>
-          <Text style={styles.textStyle}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-            vehicula viverra augue, eget posuere odio tempus eu. Nullam eu
-            sollicitudin felis. Aliquam id massa et tellus molestie dapibus et
-          </Text>
-        </View>
-        <View style={styles.orderBox}>
-          <Text style={styles.heading}> Order 1342 </Text>
-          <Text style={styles.textStyle}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-            vehicula viverra augue, eget posuere odio tempus eu. Nullam eu
-            sollicitudin felis. Aliquam id massa et tellus molestie dapibus et
-          </Text>
+        <View style={styles.container1}>
+          <Image
+            style={styles.imageStyle}
+            source={require('/Users/raunaqsingh/Desktop/html/assignments/265/MULT-265-A2-Raunaq/navigationApp/assets/pexels-ash-376464.jpg')}
+          />
+          <Image
+            style={styles.imageStyle}
+            source={require('/Users/raunaqsingh/Desktop/html/assignments/265/MULT-265-A2-Raunaq/navigationApp/assets/pexels-ella-olsson-1640774.jpg')}
+          />
+          <Image
+            style={styles.imageStyle}
+            source={require('/Users/raunaqsingh/Desktop/html/assignments/265/MULT-265-A2-Raunaq/navigationApp/assets/pexels-jane-doan-1099680.jpg')}
+          />
+          <Image
+            style={styles.imageStyle}
+            source={require('/Users/raunaqsingh/Desktop/html/assignments/265/MULT-265-A2-Raunaq/navigationApp/assets/pexels-ash-376464.jpg')}
+          />
         </View>
       </ScrollView>
       <View style={styles.navStyle}>
@@ -336,7 +388,6 @@ const styles = StyleSheet.create({
   btnStyle: {
     width: 400,
     borderWidth: 2,
-    justifyContent: 'center',
     flexDirection: 'row',
   },
   heading: {
