@@ -112,12 +112,66 @@ function HomeScreen({navigation}) {
   );
 }
 
+// second screen of the app
 function DetailsScreen({navigation}) {
   return (
     <View style={styles.container}>
       <ScrollView>
-        <View>
-          <Text> </Text>
+        <View style={styles.orderBox}>
+          <Text style={styles.heading}> Order 1342 </Text>
+          <Text style={styles.textStyle}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+            vehicula viverra augue, eget posuere odio tempus eu. Nullam eu
+            sollicitudin felis. Aliquam id massa et tellus molestie dapibus et
+          </Text>
+        </View>
+        <View style={styles.orderBox}>
+          <Text style={styles.heading}> Order 1342 </Text>
+          <Text style={styles.textStyle}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+            vehicula viverra augue, eget posuere odio tempus eu. Nullam eu
+            sollicitudin felis. Aliquam id massa et tellus molestie dapibus et
+          </Text>
+        </View>
+        <View style={styles.orderBox}>
+          <Text style={styles.heading}> Order 1342 </Text>
+          <Text style={styles.textStyle}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+            vehicula viverra augue, eget posuere odio tempus eu. Nullam eu
+            sollicitudin felis. Aliquam id massa et tellus molestie dapibus et
+          </Text>
+        </View>
+        <View style={styles.orderBox}>
+          <Text style={styles.heading}> Order 1342 </Text>
+          <Text style={styles.textStyle}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+            vehicula viverra augue, eget posuere odio tempus eu. Nullam eu
+            sollicitudin felis. Aliquam id massa et tellus molestie dapibus et
+          </Text>
+        </View>
+        <View style={styles.orderBox}>
+          <Text style={styles.heading}> Order 1342 </Text>
+          <Text style={styles.textStyle}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+            vehicula viverra augue, eget posuere odio tempus eu. Nullam eu
+            sollicitudin felis. Aliquam id massa et tellus molestie dapibus et
+          </Text>
+        </View>
+        <View style={styles.orderBox}>
+          <Text style={styles.heading}> Order 1342 </Text>
+          <Text style={styles.textStyle}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+            vehicula viverra augue, eget posuere odio tempus eu. Nullam eu
+            sollicitudin felis. Aliquam id massa et tellus molestie dapibus et
+          </Text>
+        </View>
+        <View style={styles.orderBox}>
+          <Text style={styles.heading}> Order 1342 </Text>
+          <Text style={styles.textStyle}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+            vehicula viverra augue, eget posuere odio tempus eu. Nullam eu
+            sollicitudin felis. Aliquam id massa et tellus molestie dapibus et
+          </Text>
         </View>
       </ScrollView>
       <View style={styles.navStyle}>
@@ -174,6 +228,10 @@ const styles = StyleSheet.create({
     flex: 2,
     flexDirection: 'row',
   },
+  orderBox: {
+    borderBottomWidth: 2,
+    margin: 8,
+  },
   navStyle: {
     alignItems: 'center',
     justifyContent: 'flex-end',
@@ -187,11 +245,16 @@ const styles = StyleSheet.create({
   },
   heading: {
     fontSize: 20,
+    margin: 3,
+  },
+  textStyle: {
+    fontSize: 16,
+    margin: 3,
   },
   imageStyle: {
     flex: 1,
     width: 150,
-    height: 200,
+    height: 100,
     margin: 10,
     paddingBottom: 60,
     borderWidth: 2,
