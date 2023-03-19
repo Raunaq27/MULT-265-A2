@@ -1,116 +1,165 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow strict-local
- */
+// In App.js in a new project
 
-import React from 'react';
-import type {Node} from 'react';
-import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  useColorScheme,
-  View,
-} from 'react-native';
+import * as React from 'react';
+import {View, Text, Button, StyleSheet, Image, ScrollView} from 'react-native';
+import {NavigationContainer} from '@react-navigation/native';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
-import {
-  Colors,
-  DebugInstructions,
-  Header,
-  LearnMoreLinks,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
-
-/* $FlowFixMe[missing-local-annot] The type annotation(s) required by Flow's
- * LTI update could not be added via codemod */
-const Section = ({children, title}): Node => {
-  const isDarkMode = useColorScheme() === 'dark';
+function HomeScreen({navigation}) {
   return (
-    <View style={styles.sectionContainer}>
-      <Text
-        style={[
-          styles.sectionTitle,
-          {
-            color: isDarkMode ? Colors.white : Colors.black,
-          },
-        ]}>
-        {title}
-      </Text>
-      <Text
-        style={[
-          styles.sectionDescription,
-          {
-            color: isDarkMode ? Colors.light : Colors.dark,
-          },
-        ]}>
-        {children}
-      </Text>
-    </View>
-  );
-};
-
-const App: () => Node = () => {
-  const isDarkMode = useColorScheme() === 'dark';
-
-  const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
-  };
-
-  return (
-    <SafeAreaView style={backgroundStyle}>
-      <StatusBar
-        barStyle={isDarkMode ? 'light-content' : 'dark-content'}
-        backgroundColor={backgroundStyle.backgroundColor}
-      />
-      <ScrollView
-        contentInsetAdjustmentBehavior="automatic"
-        style={backgroundStyle}>
-        <Header />
-        <View
-          style={{
-            backgroundColor: isDarkMode ? Colors.black : Colors.white,
-          }}>
-          <Section title="Step One">
-            Edit <Text style={styles.highlight}>App.js</Text> to change this
-            screen and then come back to see your edits.
-          </Section>
-          <Section title="See Your Changes">
-            <ReloadInstructions />
-          </Section>
-          <Section title="Debug">
-            <DebugInstructions />
-          </Section>
-          <Section title="Learn More">
-            Read the docs to discover what to do next:
-          </Section>
-          <LearnMoreLinks />
+    <View style={styles.container}>
+      <ScrollView>
+        <View style={styles.container}>
+          <Text style={styles.heading}>Closest</Text>
+          <View style={styles.container1}>
+            <Image
+              style={styles.imageStyle}
+              source={require('/Users/raunaqsingh/Desktop/html/assignments/265/MULT-265-A2-Raunaq/navigationApp/assets/pexels-ash-376464.jpg')}
+            />
+            <Image
+              style={styles.imageStyle}
+              source={require('/Users/raunaqsingh/Desktop/html/assignments/265/MULT-265-A2-Raunaq/navigationApp/assets/pexels-ash-376464.jpg')}
+            />
+            <Image
+              style={styles.imageStyle}
+              source={require('/Users/raunaqsingh/Desktop/html/assignments/265/MULT-265-A2-Raunaq/navigationApp/assets/pexels-ash-376464.jpg')}
+            />
+          </View>
+        </View>
+        <View style={styles.container}>
+          <Text style={styles.heading}>Offers</Text>
+          <View style={styles.container1}>
+            <Image
+              style={styles.imageStyle}
+              source={require('/Users/raunaqsingh/Desktop/html/assignments/265/MULT-265-A2-Raunaq/navigationApp/assets/pexels-ash-376464.jpg')}
+            />
+            <Image
+              style={styles.imageStyle}
+              source={require('/Users/raunaqsingh/Desktop/html/assignments/265/MULT-265-A2-Raunaq/navigationApp/assets/pexels-ash-376464.jpg')}
+            />
+            <Image
+              style={styles.imageStyle}
+              source={require('/Users/raunaqsingh/Desktop/html/assignments/265/MULT-265-A2-Raunaq/navigationApp/assets/pexels-ash-376464.jpg')}
+            />
+          </View>
+        </View>
+        <View style={styles.container}>
+          <Text style={styles.heading}>Previously Ordered</Text>
+          <View style={styles.container1}>
+            <Image
+              style={styles.imageStyle}
+              source={require('/Users/raunaqsingh/Desktop/html/assignments/265/MULT-265-A2-Raunaq/navigationApp/assets/pexels-ash-376464.jpg')}
+            />
+            <Image
+              style={styles.imageStyle}
+              source={require('/Users/raunaqsingh/Desktop/html/assignments/265/MULT-265-A2-Raunaq/navigationApp/assets/pexels-ash-376464.jpg')}
+            />
+            <Image
+              style={styles.imageStyle}
+              source={require('/Users/raunaqsingh/Desktop/html/assignments/265/MULT-265-A2-Raunaq/navigationApp/assets/pexels-ash-376464.jpg')}
+            />
+          </View>
+        </View>
+        <View style={styles.container}>
+          <Text style={styles.heading}>Offers</Text>
+          <View style={styles.container1}>
+            <Image
+              style={styles.imageStyle}
+              source={require('/Users/raunaqsingh/Desktop/html/assignments/265/MULT-265-A2-Raunaq/navigationApp/assets/pexels-ash-376464.jpg')}
+            />
+            <Image
+              style={styles.imageStyle}
+              source={require('/Users/raunaqsingh/Desktop/html/assignments/265/MULT-265-A2-Raunaq/navigationApp/assets/pexels-ash-376464.jpg')}
+            />
+            <Image
+              style={styles.imageStyle}
+              source={require('/Users/raunaqsingh/Desktop/html/assignments/265/MULT-265-A2-Raunaq/navigationApp/assets/pexels-ash-376464.jpg')}
+            />
+          </View>
         </View>
       </ScrollView>
-    </SafeAreaView>
+      <View style={styles.navStyle}>
+        <View style={styles.btnStyle}>
+          <Button title="Home" onPress={() => navigation.navigate('Home')} />
+          <Button
+            title="Orders"
+            onPress={() => navigation.navigate('Details')}
+          />
+          <Button
+            title="Orders"
+            onPress={() => navigation.navigate('Details')}
+          />
+          <Button
+            title="Orders"
+            onPress={() => navigation.navigate('Details')}
+          />
+          <Button
+            title="Orders"
+            onPress={() => navigation.navigate('Details')}
+          />
+        </View>
+      </View>
+    </View>
   );
-};
+}
+
+function DetailsScreen({navigation}) {
+  return (
+    <View style={styles.navStyle}>
+      <View style={styles.btnStyle}>
+        <Button title="Home" onPress={() => navigation.navigate('Home')} />
+        <Button title="Orders" onPress={() => navigation.navigate('Details')} />
+        <Button title="Orders" onPress={() => navigation.navigate('Details')} />
+        <Button title="Orders" onPress={() => navigation.navigate('Details')} />
+        <Button title="Orders" onPress={() => navigation.navigate('Details')} />
+      </View>
+    </View>
+  );
+}
+
+const Stack = createNativeStackNavigator();
+
+function App() {
+  return (
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName="Home">
+        <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen name="Details" component={DetailsScreen} />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
+}
 
 const styles = StyleSheet.create({
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
+  container: {
+    flex: 1,
   },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
+  container1: {
+    flex: 2,
+    flexDirection: 'row',
   },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
+  navStyle: {
+    alignItems: 'center',
+    justifyContent: 'flex-end',
+    paddingBottom: 40,
   },
-  highlight: {
-    fontWeight: '700',
+  btnStyle: {
+    width: 400,
+    borderWidth: 2,
+    justifyContent: 'center',
+    flexDirection: 'row',
+  },
+  heading: {
+    fontSize: 20,
+  },
+  imageStyle: {
+    flex: 1,
+    width: 150,
+    height: 200,
+    margin: 10,
+    paddingBottom: 60,
+    borderWidth: 2,
+    alignContent: 'space-between',
   },
 });
 
