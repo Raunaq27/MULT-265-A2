@@ -5,6 +5,7 @@ import {View, Text, Button, StyleSheet, Image, ScrollView} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
+// home page of the app
 function HomeScreen({navigation}) {
   return (
     <View style={styles.container}>
@@ -18,11 +19,11 @@ function HomeScreen({navigation}) {
             />
             <Image
               style={styles.imageStyle}
-              source={require('/Users/raunaqsingh/Desktop/html/assignments/265/MULT-265-A2-Raunaq/navigationApp/assets/pexels-ash-376464.jpg')}
+              source={require('/Users/raunaqsingh/Desktop/html/assignments/265/MULT-265-A2-Raunaq/navigationApp/assets/pexels-ella-olsson-1640774.jpg')}
             />
             <Image
               style={styles.imageStyle}
-              source={require('/Users/raunaqsingh/Desktop/html/assignments/265/MULT-265-A2-Raunaq/navigationApp/assets/pexels-ash-376464.jpg')}
+              source={require('/Users/raunaqsingh/Desktop/html/assignments/265/MULT-265-A2-Raunaq/navigationApp/assets/pexels-jane-doan-1099680.jpg')}
             />
           </View>
         </View>
@@ -35,11 +36,11 @@ function HomeScreen({navigation}) {
             />
             <Image
               style={styles.imageStyle}
-              source={require('/Users/raunaqsingh/Desktop/html/assignments/265/MULT-265-A2-Raunaq/navigationApp/assets/pexels-ash-376464.jpg')}
+              source={require('/Users/raunaqsingh/Desktop/html/assignments/265/MULT-265-A2-Raunaq/navigationApp/assets/pexels-ella-olsson-1640774.jpg')}
             />
             <Image
               style={styles.imageStyle}
-              source={require('/Users/raunaqsingh/Desktop/html/assignments/265/MULT-265-A2-Raunaq/navigationApp/assets/pexels-ash-376464.jpg')}
+              source={require('/Users/raunaqsingh/Desktop/html/assignments/265/MULT-265-A2-Raunaq/navigationApp/assets/pexels-jane-doan-1099680.jpg')}
             />
           </View>
         </View>
@@ -52,11 +53,11 @@ function HomeScreen({navigation}) {
             />
             <Image
               style={styles.imageStyle}
-              source={require('/Users/raunaqsingh/Desktop/html/assignments/265/MULT-265-A2-Raunaq/navigationApp/assets/pexels-ash-376464.jpg')}
+              source={require('/Users/raunaqsingh/Desktop/html/assignments/265/MULT-265-A2-Raunaq/navigationApp/assets/pexels-ella-olsson-1640774.jpg')}
             />
             <Image
               style={styles.imageStyle}
-              source={require('/Users/raunaqsingh/Desktop/html/assignments/265/MULT-265-A2-Raunaq/navigationApp/assets/pexels-ash-376464.jpg')}
+              source={require('/Users/raunaqsingh/Desktop/html/assignments/265/MULT-265-A2-Raunaq/navigationApp/assets/pexels-jane-doan-1099680.jpg')}
             />
           </View>
         </View>
@@ -69,31 +70,39 @@ function HomeScreen({navigation}) {
             />
             <Image
               style={styles.imageStyle}
-              source={require('/Users/raunaqsingh/Desktop/html/assignments/265/MULT-265-A2-Raunaq/navigationApp/assets/pexels-ash-376464.jpg')}
+              source={require('/Users/raunaqsingh/Desktop/html/assignments/265/MULT-265-A2-Raunaq/navigationApp/assets/pexels-ella-olsson-1640774.jpg')}
             />
             <Image
               style={styles.imageStyle}
-              source={require('/Users/raunaqsingh/Desktop/html/assignments/265/MULT-265-A2-Raunaq/navigationApp/assets/pexels-ash-376464.jpg')}
+              source={require('/Users/raunaqsingh/Desktop/html/assignments/265/MULT-265-A2-Raunaq/navigationApp/assets/pexels-jane-doan-1099680.jpg')}
             />
           </View>
         </View>
       </ScrollView>
       <View style={styles.navStyle}>
         <View style={styles.btnStyle}>
-          <Button title="Home" onPress={() => navigation.navigate('Home')} />
           <Button
+            color={'green'}
+            title="Home"
+            onPress={() => navigation.navigate('Home')}
+          />
+          <Button
+            title="Orders"
+            color={'black'}
+            onPress={() => navigation.navigate('Orders')}
+          />
+          <Button
+            color={'black'}
+            title="Orders"
+            onPress={() => navigation.navigate('Orders')}
+          />
+          <Button
+            color={'black'}
             title="Orders"
             onPress={() => navigation.navigate('Details')}
           />
           <Button
-            title="Orders"
-            onPress={() => navigation.navigate('Details')}
-          />
-          <Button
-            title="Orders"
-            onPress={() => navigation.navigate('Details')}
-          />
-          <Button
+            color={'black'}
             title="Orders"
             onPress={() => navigation.navigate('Details')}
           />
@@ -105,13 +114,40 @@ function HomeScreen({navigation}) {
 
 function DetailsScreen({navigation}) {
   return (
-    <View style={styles.navStyle}>
-      <View style={styles.btnStyle}>
-        <Button title="Home" onPress={() => navigation.navigate('Home')} />
-        <Button title="Orders" onPress={() => navigation.navigate('Details')} />
-        <Button title="Orders" onPress={() => navigation.navigate('Details')} />
-        <Button title="Orders" onPress={() => navigation.navigate('Details')} />
-        <Button title="Orders" onPress={() => navigation.navigate('Details')} />
+    <View style={styles.container}>
+      <ScrollView>
+        <View>
+          <Text> </Text>
+        </View>
+      </ScrollView>
+      <View style={styles.navStyle}>
+        <View style={styles.btnStyle}>
+          <Button
+            color={'green'}
+            title="Home"
+            onPress={() => navigation.navigate('Home')}
+          />
+          <Button
+            title="Orders"
+            color={'black'}
+            onPress={() => navigation.navigate('Orders')}
+          />
+          <Button
+            color={'black'}
+            title="Orders"
+            onPress={() => navigation.navigate('Orders')}
+          />
+          <Button
+            color={'black'}
+            title="Orders"
+            onPress={() => navigation.navigate('Details')}
+          />
+          <Button
+            color={'black'}
+            title="Orders"
+            onPress={() => navigation.navigate('Details')}
+          />
+        </View>
       </View>
     </View>
   );
@@ -124,7 +160,7 @@ function App() {
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Home">
         <Stack.Screen name="Home" component={HomeScreen} />
-        <Stack.Screen name="Details" component={DetailsScreen} />
+        <Stack.Screen name="Orders" component={DetailsScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
